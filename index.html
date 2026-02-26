@@ -360,6 +360,21 @@
       to   { opacity:1; transform:translateY(0); }
     }
     .fade-up { animation: fadeUp .6s ease both; }
+
+    /* -- estilo para fotos --*/
+    .avatar-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .avatar-wrap {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
   </style>
 </head>
 <body>
@@ -536,8 +551,8 @@
 
       <!-- CARD 5 -->
       <div class="member-card">
-        <div class="avatar-wrap" id="wrap-4">
-          <div class="avatar-placeholder" id="ph-4">VI</div>
+        <div class="avatar-wrap">
+            <img src="assets/ismael_vanegas.png" alt="Ismael Vanegas" class="avatar-img">
         </div>
         <div class="member-name">Vanegas Ismael</div>
         <div class="member-role">DevOps & Integración</div>
@@ -545,10 +560,6 @@
         <div class="member-skills">
           <span class="ms-tag">GitLab</span><span class="ms-tag">CI/CD</span><span class="ms-tag">Deploy</span>
         </div>
-        <label class="upload-btn">
-          &#128247; Subir foto
-          <input class="upload-input" type="file" accept="image/*" onchange="setPhoto(this,4,'VI')"/>
-        </label>
       </div>
 
     </div>
